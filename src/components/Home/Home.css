@@ -1,0 +1,7 @@
+.home-section{
+    display: flex;
+    padding: 30px;
+}
+.home-section img{
+   width: 600px;
+}

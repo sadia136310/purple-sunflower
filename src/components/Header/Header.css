@@ -1,0 +1,20 @@
+nav a{
+    text-decoration: none;
+    margin-right: 20px;
+  
+}
+nav a:hover{
+    color: brown;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: palegreen;
+   
+}
+.purple{
+    color: purple;
+}
