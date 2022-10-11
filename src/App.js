@@ -6,6 +6,10 @@ import Home from './components/Home/Home';
 import ShowDetails from './components/ShowDetails/ShowDetails';
 import Main from './layouts/Main';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function App() {
   const router = createBrowserRouter([

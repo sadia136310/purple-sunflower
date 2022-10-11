@@ -1,19 +1,22 @@
 import React from 'react';
 import Option from '../Option/Option';
 import { EyeIcon } from '@heroicons/react/24/solid'
-import './Question.css'
+import './Question.css';
+
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const Question = ({ques}) => {
     console.log(ques);
     const{correctAnswer,options,question}=ques;
 
-    const showAnsToButton=(ques)=>{
- const showAns=options.find(q=>q === ques.correctAnswer);
+    const showAnsToButton=(option)=>{
+ const showAns=(option === correctAnswer);
  if(showAns){
-    alert('wrong');
+    toast("right Ans!");
  }
  else{
-    alert('right')
+   toast('wrong Ans!');
  }
     }
     
@@ -21,7 +24,7 @@ const Question = ({ques}) => {
         <div  className='ques-container'>
    
       <h3> {question} </h3>
-      <p><EyeIcon onClick={()=> alert(correctAnswer)} className='eye-icon'/>
+      <p><EyeIcon onClick={()=> toast(correctAnswer)} className='eye-icon'/>
       </p>
     
            {
