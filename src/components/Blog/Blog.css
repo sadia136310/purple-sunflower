@@ -1,0 +1,10 @@
+.question-container{
+    border: 1px solid purple;
+    margin: 80px;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+.answer{
+    padding-left: 30px;
+    padding-right:30px ;
+}

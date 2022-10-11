@@ -4,7 +4,7 @@ import {useNavigate} from 'react-router-dom';
 
 
 const Data = ({data}) => {
-    console.log(data)
+    // console.log(data)
     const navigate=useNavigate();
     const handleNavigate=()=>{
         navigate(`data/${id}`);

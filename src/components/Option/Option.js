@@ -1,10 +1,10 @@
 import React from 'react';
 import './Option.css'
 
-const Option = ({option}) => {
+const Option = ({option,showAnsToButton}) => {
     return (
         <div className='option'>
-<input type="radio" value="option" name="option" /> {option}
+<input onClick={showAnsToButton} type="radio" value="option" name="option" /> {option}
         </div>
     );
 };

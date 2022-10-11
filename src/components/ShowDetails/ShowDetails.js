@@ -4,7 +4,7 @@ import Question from '../Question/Question';
 
 const ShowDetails = () => {
   const dataDetails=useLoaderData()
-  console.log(dataDetails.data);
+  // console.log(dataDetails.data);
   const {name,total,questions}=dataDetails.data;
  
     return (
