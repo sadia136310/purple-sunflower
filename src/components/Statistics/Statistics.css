@@ -1,6 +1,7 @@
 .chart-container{
     margin-top: 100px;
     margin-left: 280px;
+    margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 767px) {

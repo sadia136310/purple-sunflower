@@ -13,10 +13,10 @@ const Question = ({ques}) => {
     const showAnsToButton=(option)=>{
  const showAns=(option === correctAnswer);
  if(showAns){
-    toast("right Ans!");
+    toast("Right Ans!");
  }
  else{
-   toast('wrong Ans!');
+   toast('Wrong Ans!');
  }
     }
     
