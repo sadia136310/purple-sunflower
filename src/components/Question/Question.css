@@ -6,5 +6,11 @@
     height: 380px;
     padding-left: 40px;
     padding-right: 40px;
+    border-radius: 10px;
     
+}
+.eye-icon{
+    width: 20px;
+    margin-left:15px; 
+
 }
