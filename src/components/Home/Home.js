@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Home.css'
 import img from '../../images/10.webp'
 import { useLoaderData } from 'react-router-dom';
@@ -7,8 +7,10 @@ import Data from '../Data/Data';
 
 const Home = () => {
   const datas=useLoaderData();
-  console.log(datas)
-    return (
+  // console.log(datas)
+
+ 
+ return (
         <div>
           <section className='home-section'>
             <div>
@@ -25,6 +27,7 @@ const Home = () => {
         datas.data.map(data=> <Data
           key={data.id} 
       data={data}
+   
         ></Data> )
       }
     </section>
