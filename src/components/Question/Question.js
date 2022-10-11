@@ -3,11 +3,11 @@ import Option from '../Option/Option';
 import { EyeIcon } from '@heroicons/react/24/solid'
 import './Question.css';
 
-import { ToastContainer, toast } from 'react-toastify';
+import {toast} from 'react-toastify';
 
 
 const Question = ({ques}) => {
-    console.log(ques);
+    // console.log(ques);
     const{correctAnswer,options,question}=ques;
 
     const showAnsToButton=(option)=>{
@@ -23,7 +23,7 @@ const Question = ({ques}) => {
     return (
         <div  className='ques-container'>
    
-      <h3> {question} </h3>
+      <h3>ques: {question} </h3>
       <p><EyeIcon onClick={()=> toast(correctAnswer)} className='eye-icon'/>
       </p>
     

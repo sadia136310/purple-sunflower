@@ -22,9 +22,9 @@ const Home = () => {
           <section className='data-container'>
       
       {
-        datas.data.map(data=> <Data
-          key={data.id} 
-      data={data}
+        datas.data.map(topic=> <Data
+          key={topic.id} 
+      topic={topic}
    
         ></Data> )
       }

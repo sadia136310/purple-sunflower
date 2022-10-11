@@ -8,6 +8,7 @@ import Main from './layouts/Main';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Statistics from './components/Statistics/Statistics';
 
 
 
@@ -37,6 +38,11 @@ function App() {
   {
     path:'/blog',
     element:<Blog></Blog>
+  },
+  {
+    path:'/statistics',
+    loader: async() => fetch('https://openapi.programming-hero.com/api/quiz'),
+    element: <Statistics></Statistics>
   }
   
 

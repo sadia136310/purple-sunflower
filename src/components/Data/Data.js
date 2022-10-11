@@ -3,13 +3,13 @@ import './Data.css'
 import {useNavigate} from 'react-router-dom';
 
 
-const Data = ({data}) => {
+const Data = ({topic}) => {
     // console.log(data)
     const navigate=useNavigate();
     const handleNavigate=()=>{
         navigate(`data/${id}`);
     }
-    const {name,logo,total,id}=data;
+    const {name,logo,total,id}=topic;
     return (
         <div className='card'>
            
