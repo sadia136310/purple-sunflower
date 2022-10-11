@@ -7,9 +7,7 @@ import Data from '../Data/Data';
 
 const Home = () => {
   const datas=useLoaderData();
-  // console.log(datas)
-
- 
+  // console.log(datas);
  return (
         <div>
           <section className='home-section'>

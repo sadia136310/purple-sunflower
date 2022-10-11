@@ -1,11 +1,14 @@
 import React from 'react';
 import './Data.css'
-import { Link } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 
 const Data = ({data}) => {
- 
-
+    console.log(data)
+    const navigate=useNavigate();
+    const handleNavigate=()=>{
+        navigate(`data/${id}`);
+    }
     const {name,logo,total,id}=data;
     return (
         <div className='card'>
@@ -13,8 +16,7 @@ const Data = ({data}) => {
             <img src={logo} alt="" />
             <h3> {name}</h3>
             <p>{total} Questions are here</p>
-          
-            <Link to={`data/${id}`}><button className='btn'>Start Quiz </button> </Link>
+            <button onClick={handleNavigate} className='btn'>Start Quiz </button>
               
         </div>
     );

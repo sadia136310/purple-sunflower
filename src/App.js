@@ -1,5 +1,6 @@
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import './App.css';
+
 import Home from './components/Home/Home';
 import ShowDetails from './components/ShowDetails/ShowDetails';
 import Main from './layouts/Main';
@@ -26,7 +27,7 @@ function App() {
     loader: async({params})=>{
      return fetch(`https://openapi.programming-hero.com/api/quiz/${params.showId}`)
     }, 
-    element: <ShowDetails></ShowDetails>
+    element:<ShowDetails></ShowDetails>
   }
   
 
