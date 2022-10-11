@@ -9,6 +9,7 @@ import Main from './layouts/Main';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Statistics from './components/Statistics/Statistics';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 
@@ -16,6 +17,7 @@ function App() {
   const router = createBrowserRouter([
  {path:'/',
  element: <Main></Main>,
+ errorElement: <ErrorPage></ErrorPage>,
  children:[
 
  
