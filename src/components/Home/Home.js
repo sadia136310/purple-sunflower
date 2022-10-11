@@ -1,8 +1,13 @@
 import React from 'react';
 import './Home.css'
 import img from '../../images/10.webp'
+import { useLoaderData } from 'react-router-dom';
+import Data from '../Data/Data';
+
 
 const Home = () => {
+  const datas=useLoaderData();
+  console.log(datas)
     return (
         <div>
           <section className='home-section'>
@@ -14,6 +19,16 @@ const Home = () => {
                 <img src={img} alt="" />
             </div>
           </section>
+          <section className='data-container'>
+      
+      {
+        datas.data.map(data=> <Data
+          key={data.id} 
+      data={data}
+        ></Data> )
+      }
+    </section>
+         
         </div>
     );
 };

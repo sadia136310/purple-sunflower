@@ -5,3 +5,8 @@
 .home-section img{
    width: 600px;
 }
+.data-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  
+}
