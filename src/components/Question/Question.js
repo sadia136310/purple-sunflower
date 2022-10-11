@@ -23,9 +23,8 @@ const Question = ({ques}) => {
     return (
         <div  className='ques-container'>
    
-      <h3>ques: {question} </h3>
-      <p><EyeIcon onClick={()=> toast(correctAnswer)} className='eye-icon'/>
-      </p>
+      <h3>ques: {question}</h3>
+      <p><EyeIcon onClick={()=> toast(correctAnswer)} className='eye-icon'/> </p>
     
            {
        options.map(option=> <Option

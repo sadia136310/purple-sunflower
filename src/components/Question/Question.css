@@ -1,7 +1,8 @@
 .ques-container{
     border: 1px solid purple;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 200px;
+    margin-bottom: 30px;
     width: 630px;
     height: 380px;
     padding-left: 40px;
@@ -13,4 +14,11 @@
     width: 20px;
     margin-left:15px; 
 
+}
+@media only screen and (max-width: 767px) {
+    .ques-container{
+        margin-left: 25px; 
+        width: 400px;
+        height: 440px;
+    }
 }

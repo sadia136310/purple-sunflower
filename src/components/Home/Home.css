@@ -8,5 +8,22 @@
 .data-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-bottom: 30px;
+    margin-top: 40px;
   
+}
+
+@media only screen and (max-width: 767px) {
+    .home-section{
+        padding: 10px;
+    }
+    .data-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+      
+    }
+    .home-section img{
+        width: 350px;
+        margin-top: 90px;
+     }
 }
