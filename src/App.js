@@ -46,8 +46,6 @@ function App() {
     loader: async() => fetch('https://openapi.programming-hero.com/api/quiz'),
     element: <Statistics></Statistics>
   }
-  
-
  ]
   
  },
