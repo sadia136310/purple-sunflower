@@ -6,7 +6,7 @@ import './Question.css';
 import {toast} from 'react-toastify';
 
 
-const Question = ({ques}) => {
+const Question = ({ques,count}) => {
     // console.log(ques);
     const{correctAnswer,options,question}=ques;
 
@@ -19,11 +19,11 @@ const Question = ({ques}) => {
    toast('Wrong Ans!');
  }
     }
-    
+   
     return (
         <div  className='ques-container'>
    
-      <h3>ques: {question}</h3>
+      <h3>Ques {count+1}.  {question.replace( /(<([^>]+)>)/ig, '')}</h3>
       <p><EyeIcon onClick={()=> toast(correctAnswer)} className='eye-icon'/> </p>
     
            {

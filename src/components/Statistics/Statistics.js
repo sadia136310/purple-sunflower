@@ -10,7 +10,10 @@ const {data}=useLoaderData();
 console.log(data);
     
     return (
-        <div className='chart-container'>
+       <div>
+          <h1>Total Number of Quizzes</h1>
+         <div className='chart-container'>
+          
             <LineChart width={500} height={400} data={data}>
        <Line type="monotone" dataKey="total" stroke="#82ca9d" />
        <XAxis dataKey="name" />
@@ -18,6 +21,8 @@ console.log(data);
           <Tooltip />
        </LineChart>
     </div>
+       </div>
+
     );
 };
 

@@ -1,3 +1,9 @@
+My project name: Purple Sunflower
+
+### `My project description`
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
