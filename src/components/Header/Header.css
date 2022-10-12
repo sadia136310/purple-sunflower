@@ -14,7 +14,6 @@ nav a:hover{
     padding-right: 80px;
     background-color: lightblue;
     font-size: large;
-   
 }
 .purple{
     color: purple;
@@ -23,10 +22,12 @@ nav a:hover{
 @media only screen and (max-width: 767px) {
     nav a{
         margin-right: 8px;
+       
     }
     .nav{
         padding-left: 10px;
-        padding-right: 10px;
+        padding-right: 20px;
         font-size: medium;
+     
 }
 }

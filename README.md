@@ -8,14 +8,14 @@
 
 ### `Project Overview`: 
 
-I'm Using Vanilla CSS for design part.In the home page use a navbar , then try to keep a header section.Then I'm showing  4 topics like React , Javascript, Css, Git.Each quiz contains 8-11 questions.Basically, it's a self testing website. 
-In the Statistics page using a simple rechart to show home many ques are here.
+I'm Using Vanilla CSS for design part.In the home page firstly I use a navbar , then try to keep a header section.Then I'm showing  4 topics like React , Javascript, Css, Git.Each quiz contains have 8-11 questions.Basically, it's a self testing website. 
+In the Statistics page I'm using a simple rechart to show how many ques are here.
 In blog page just show three question and answer.
 
 Also, create an error page.!!!   
-And i am trying to keep a footer part in footer section.
+And I'm trying to keep a footer part in footer section.
 That's it. 
-### `Features`
+### `Features` :
 `1. Client Side Routing`
 `2. Data Loading`
 `3. Data Fetchers`
